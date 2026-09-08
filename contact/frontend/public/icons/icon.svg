@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="50%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Rounded Canvas -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="106" fill="none" stroke="url(#primaryGrad)" stroke-width="6" opacity="0.6" />
+
+  <!-- Digital Business Card Silhouette -->
+  <rect x="80" y="110" width="352" height="292" rx="28" fill="url(#cardGrad)" stroke="url(#primaryGrad)" stroke-width="4" opacity="0.95" />
+
+  <!-- Card Magnetic / Tech Chip Accent -->
+  <rect x="120" y="150" width="56" height="44" rx="8" fill="#F59E0B" opacity="0.9" />
+  <path d="M120 172 h56 M148 150 v44" stroke="#78350F" stroke-width="2" />
+
+  <!-- Identity Lines -->
+  <rect x="200" y="154" width="180" height="16" rx="8" fill="#FFFFFF" opacity="0.95" />
+  <rect x="200" y="180" width="110" height="12" rx="6" fill="#818CF8" opacity="0.8" />
+
+  <!-- Center QR Sync Emblem -->
+  <g transform="translate(196, 230)">
+    <!-- QR Corner Top-Left -->
+    <rect x="0" y="0" width="36" height="36" rx="6" fill="none" stroke="#38BDF8" stroke-width="4"/>
+    <rect x="8" y="8" width="20" height="20" rx="3" fill="#38BDF8"/>
+
+    <!-- QR Corner Top-Right -->
+    <rect x="84" y="0" width="36" height="36" rx="6" fill="none" stroke="#38BDF8" stroke-width="4"/>
+    <rect x="92" y="8" width="20" height="20" rx="3" fill="#38BDF8"/>
+
+    <!-- QR Corner Bottom-Left -->
+    <rect x="0" y="84" width="36" height="36" rx="6" fill="none" stroke="#38BDF8" stroke-width="4"/>
+    <rect x="8" y="92" width="20" height="20" rx="3" fill="#38BDF8"/>
+
+    <!-- Dynamic Connection Waves -->
+    <circle cx="60" cy="60" r="14" fill="#6366F1" />
+    <path d="M 44 60 A 16 16 0 0 1 76 60" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" />
+    <path d="M 36 60 A 24 24 0 0 1 84 60" stroke="#38BDF8" stroke-width="3" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- Signal / Contact Waves on bottom right -->
+  <path d="M 370 330 A 25 25 0 0 0 370 290" stroke="#10B981" stroke-width="4" fill="none" stroke-linecap="round" />
+  <path d="M 385 340 A 40 40 0 0 0 385 280" stroke="#10B981" stroke-width="4" stroke-dasharray="2 6" fill="none" stroke-linecap="round" opacity="0.7" />
+</svg>

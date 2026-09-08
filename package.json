@@ -1,0 +1,23 @@
+{
+  "name": "qr-contact-system-workspace",
+  "version": "1.0.0",
+  "description": "Root workspace proxy for QR Contact project",
+  "scripts": {
+    "server": "node contact/backend/server.js",
+    "server:dev": "nodemon contact/backend/server.js",
+    "client": "npm run dev --prefix contact/frontend",
+    "dev:backend": "npm --prefix contact/backend run dev",
+    "backend:dev": "npm --prefix contact/backend run dev",
+    "dev:frontend": "npm --prefix contact/frontend run dev",
+    "frontend:dev": "npm --prefix contact/frontend run dev",
+    "dev": "npm --prefix contact run dev",
+    "start": "node contact/backend/server.js",
+    "seed": "npm --prefix contact/backend run seed",
+    "test": "npm --prefix contact/backend run test",
+    "test:vcard": "node contact/backend/test_vcard_feature.js",
+    "test:analytics": "node contact/backend/test_feature2_analytics.js",
+    "test:features": "node contact/backend/test_features_3_4_5.js",
+    "test:pwa": "node contact/backend/test_features_csv_share_pwa.js",
+    "test:integration": "node contact/test_integration.js"
+  }
+}
