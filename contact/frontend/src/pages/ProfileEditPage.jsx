@@ -4,8 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import IndividualForm from '../components/profile/IndividualForm';
 import CompanyForm from '../components/profile/CompanyForm';
 import PhoneMockupPreview from '../components/dashboard/PhoneMockupPreview';
-import LoadingSpinner from '../components/common/LoadingSpinner';
-import { Compass, Layers } from 'lucide-react';
+import LoadingSpinner from '../components/common/LoadingSpinner'; import { ArrowLeft, Save, CheckCircle2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export default function ProfileEditPage() {
