@@ -10,7 +10,8 @@ import {
   FileText,
   Palette,
   Crosshair,
-  Compass
+  Compass,
+  Layers
 } from 'lucide-react';
 import ImageUploader from './ImageUploader';
 import SocialLinksManager from './SocialLinksManager';
@@ -338,7 +339,8 @@ export default function IndividualForm({ formData, onChange, onImageUploaded }) 
               <span>Latitude <span className="optional">(Exact Navigation)</span></span>
             </label>
             <div className="input-wrapper">
-              <span className="input-icon"><Compass size={15} /></span>
+              <span className="input-icon"><Compass,
+  Layers size={15} /></span>
               <input
                 type="number"
                 step="any"
@@ -355,7 +357,8 @@ export default function IndividualForm({ formData, onChange, onImageUploaded }) 
               <span>Longitude <span className="optional">(Exact Navigation)</span></span>
             </label>
             <div className="input-wrapper">
-              <span className="input-icon"><Compass size={15} /></span>
+              <span className="input-icon"><Compass,
+  Layers size={15} /></span>
               <input
                 type="number"
                 step="any"

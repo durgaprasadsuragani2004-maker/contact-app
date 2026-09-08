@@ -5,7 +5,7 @@ import IndividualForm from '../components/profile/IndividualForm';
 import CompanyForm from '../components/profile/CompanyForm';
 import PhoneMockupPreview from '../components/dashboard/PhoneMockupPreview';
 import LoadingSpinner from '../components/common/LoadingSpinner';
-import { Save, ArrowLeft, CheckCircle2, Layers, User, Mail, Phone, } from 'lucide-react';
+import { User, Briefcase, Building, Phone, Mail, Globe, MapPin, FileText, Palette, Crosshair, Compass, LayersSave, ArrowLeft, CheckCircle2, } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export default function ProfileEditPage() {
