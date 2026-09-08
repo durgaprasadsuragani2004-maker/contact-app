@@ -12,7 +12,7 @@ import {
   Crosshair,
   Compass,
   Layers
-} , Layers } from 'lucide-react';
+} from 'lucide-react';
 import ImageUploader from './ImageUploader';
 import SocialLinksManager from './SocialLinksManager';
 
