@@ -1,4 +1,6 @@
-const API_BASE = '/api';
+cat << 'EOF' > contact / frontend / src / services / api.js
+const BACKEND_URL = import.meta.env.VITE_API_URL || 'https://contact-app-1b66.onrender.com';
+const API_BASE = `${BACKEND_URL.replace(/\/$/, '')}/api`;
 
 // Helper to get auth header
 function getAuthHeaders(isMultipart = false) {
@@ -19,7 +21,7 @@ async function request(endpoint, options = {}) {
   try {
     const res = await fetch(url, options);
     const contentType = res.headers.get('content-type');
-    
+
     let data;
     if (contentType && contentType.includes('application/json')) {
       data = await res.json();
@@ -141,5 +143,6 @@ export const api = {
       body: JSON.stringify(payload)
     }),
 
-  getVCardDownloadUrl: (token) => `/api/contact/${token}`
+  getVCardDownloadUrl: (token) => `${API_BASE}/contact/${token}`
 };
+EOF
