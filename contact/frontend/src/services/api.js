@@ -1,4 +1,3 @@
-cat << 'EOF' > contact / frontend / src / services / api.js
 const BACKEND_URL = import.meta.env.VITE_API_URL || 'https://contact-app-1b66.onrender.com';
 const API_BASE = `${BACKEND_URL.replace(/\/$/, '')}/api`;
 
@@ -145,4 +144,3 @@ export const api = {
 
   getVCardDownloadUrl: (token) => `${API_BASE}/contact/${token}`
 };
-EOF
