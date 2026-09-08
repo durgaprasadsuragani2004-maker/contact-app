@@ -5,11 +5,11 @@ import IndividualForm from '../components/profile/IndividualForm';
 import CompanyForm from '../components/profile/CompanyForm';
 import PhoneMockupPreview from '../components/dashboard/PhoneMockupPreview';
 import LoadingSpinner from '../components/common/LoadingSpinner';
-import { Save, ArrowLeft, Eye, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Save, ArrowLeft, CheckCircle2, Layers, User, Mail, Phone, } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export default function ProfileEditPage() {
-  const { user, profile, qrCode, updateProfileData, loading } = useAuth();
+  const { profile, qrCode, updateProfileData, loading } = useAuth();
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState(null);
@@ -36,7 +36,7 @@ export default function ProfileEditPage() {
     const res = await updateProfileData(formData);
     setIsSaving(false);
 
-    if (res.success) {
+    if (res?.success) {
       setSavedSuccess(true);
       confetti({
         particleCount: 70,
